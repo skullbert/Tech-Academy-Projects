@@ -1,0 +1,17 @@
+body {
+	background-color: #c0d6e4;
+	font-family: Helvetica, sans-serif;
+	color: #3f516e;
+}
+
+iframe {
+	height: 315px;
+	width: 560px;
+	border: 0;
+}
+
+#logo img {
+	height: 300px;
+	width: 600px;
+	border: 2px dashed #990000;
+}
