@@ -20,19 +20,19 @@ namespace ChallengeConditionalRadioButton
 
             if (penRadio.Checked)
             {
-                resultImage.ImageUrl = ~/pen.png;
+                resultImage.ImageUrl = "pen.png";
             }
             else if (pencilRadio.Checked)
             {
-                resultImage.ImageUrl = ;
+                resultImage.ImageUrl = "pencil.png";
             }
             else if (phoneRadio.Checked)
             {
-                resultImage.ImageUrl = ;        
+                resultImage.ImageUrl = "phone.png";        
             }
             else if (tabletRadio.Checked)
             {
-                resultImage.ImageUrl = ;
+                resultImage.ImageUrl = "tablet.png";
             }
             else
             {
