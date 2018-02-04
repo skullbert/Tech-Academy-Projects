@@ -1,0 +1,15 @@
+	
+            ImageLiked = imageLikedStatus;
+            ImageLikeCount = totalLikeCount;
+            Title = review.Title;
+            PlaceID = place.PlaceID;
+            PlaceName = place.Name;
+        }
+
+
+ <div id="Travel-Public-Images" class="card" >
+                    <li>
+                        <div class="col-lg-12">                                                       
+                            <a href="@string.Format("../../Reviews/DisplayReviews?PlaceID={0}",item.PlaceID)">
+                                <img class="publicImages img-thumbnail user-photos" src="~/Images/@item.ReviewPicturePath" alt="Posted_Picture" />
+                            </a>     

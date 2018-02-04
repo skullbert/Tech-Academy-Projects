@@ -1,0 +1,32 @@
+<-- Dropdown menu styling-->
+   <a id="login-icon" class="dropdown-toggle nav-dropdown-toggle" data-toggle="dropdown" href="#">
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu login-dropdown">
+                    <ul class="dropdown-menu login-dropdown" style="background-color:#000 !important;">
+
+<-- Timespan Formatting -->
+<div>                            
+                            @{if ((messageTime.Hours < 24) && (messageTime.Hours >= 1))
+                              {
+                                    //String time = @item.DateTime.ToString("hh:mm tt");
+
+                                <p class="text-left message-user-info">
+                                    <span class="message-time">@string.Format("{0} hours ago", messageTime.Hours)</span>
+                                </p>
+                              }
+                                else if((messageTime.Minutes < 1))
+                                {
+                                    <p class="text-left message-user-info">
+                                        <span class="message-time">@string.Format("{0} seconds ago", messageTime.Seconds)</span>
+                                    </p>
+                                }
+                                else if((messageTime.Hours > 24))
+                                {
+                                    <p class="text-left message-user-info">
+                                        <span class="message-time">@string.Format("{0} days ago", messageTime.Days)</span>
+                                    </p>
+                                }
+                             }
+                        </div>
+

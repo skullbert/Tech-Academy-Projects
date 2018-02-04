@@ -1,0 +1,4 @@
+   chatInput.setAttribute("placeholder", "Message...");
+            chatInput.setAttribute("type", "text");
+            $(container).append(chatInput);
+            $(container).focus();
